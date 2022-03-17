@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import { useHistory } from "react-router-dom"
 import { Auth, ERoute, FakeServer, TResponse, TUser } from "../../utils";
 import { TLoginHook } from "./Login.types";
@@ -8,6 +8,8 @@ FakeServer.register<TUser>('/login', loginData);
 
 export const useLoginHook: TLoginHook = () => {
     const history = useHistory();
+    const [login, setLogin] = useState('');
+    const [password, setPassword] = useState('');
 
     const handleLogin = useCallback(async () => {
         const resp: TResponse<TUser> = await FakeServer.fetch('/login');
@@ -18,5 +20,9 @@ export const useLoginHook: TLoginHook = () => {
 
     return {
         handleLogin,
+        login,
+        setLogin,
+        password,
+        setPassword
     }
 }

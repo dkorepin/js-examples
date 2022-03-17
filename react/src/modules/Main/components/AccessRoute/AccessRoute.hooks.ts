@@ -15,5 +15,5 @@ export const useAccessRouteHook: TAccessRouteHook = (routeProps) => {
             Auth.logout();
             history.push(ERoute.APP);
         }
-    }, [match?.url, history])
+    }, [match?.path, history])
 }

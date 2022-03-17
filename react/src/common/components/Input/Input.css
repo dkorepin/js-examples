@@ -1,0 +1,24 @@
+.input {
+    height: 30px;
+    font-family: 'Poppins', sans-serif; 
+    outline: none;
+    background: #e2e2e2;
+    border: 1px #b8b8b8 solid;
+    transition: border-color 0.6s;
+    font-weight: 200;
+    color: #3a3a3a;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.input:focus{
+    border: 0;
+    border-bottom: 2px solid #444;
+    font-weight: 300;
+    color: #444;
+    outline: none;
+}
+
+.input:hover {
+    background-color: #fff;
+}

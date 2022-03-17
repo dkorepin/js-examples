@@ -1,7 +1,5 @@
 # 4 JavaScript examples
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Angular
 
 Angular example
@@ -13,6 +11,7 @@ Node.js Server
 ## React
 
 React example
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### `npm start`
 

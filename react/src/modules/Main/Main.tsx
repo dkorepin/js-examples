@@ -7,6 +7,7 @@ import {
 import { ERoute, routes } from '../../utils';
 import { AccessRoute } from './components/AccessRoute/AccessRoute';
 import { AppRoot } from './components/AppRoot/AppRoot';
+import './Main.css';
 
 export const Main: React.FC = () => {
 
