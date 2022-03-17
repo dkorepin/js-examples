@@ -1,9 +1,9 @@
-export type TFakeServerConfig = {
+export type TFakeServerConfig<T> = {
     timeout: number;
-    result: TResponse;
+    result: TResponse<T>;
 }
 
-export type TResponse = {
+export type TResponse<T> = {
     status: number;
-    body: any;
+    body: T | null;
 }
