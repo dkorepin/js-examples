@@ -1,9 +1,12 @@
+import { TError, TForm, TFormChange } from "../../../utils";
+
 export interface Props {
     className?: string;
-    onChange: (value: string) => void;
-    value: string | number;
+    onChange: TFormChange;
+    form: TForm;
     placeholder?: string;
     masked?: boolean;
     title?: string
-    name?: string;
+    name: string;
+    errors?: TError;
 }
